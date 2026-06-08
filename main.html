@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+
+header{
+height:60px;
+width:100%;
+background-color:white;
+box-shadow:0px 0px 19px 0px;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+ul{
+display:flex;
+justify-content:center;
+list-style:none;
+}
+
+ul li{
+margin-left:50px;
+margin-top:20px;
+}
+
+ul li a{
+color:black;
+text-decoration:none;
+transition:.4s;
+font-size:20px;
+}
+
+ul li a:hover{
+color:#8f4b4b;
+}
+
+.container{
+display:flex;
+}
+
+.second{
+width:200px;
+min-height:100vh;
+background:#333;
+position:relative;
+}
+
+
+.second-div1{
+
+width:100%;
+height:30%;
+float:left;
+box-shadow:0px 0px 15px 0px;
+color:white;
+text-align:center;
+position:relative;
+display:none;
+padding:15px;
+
+
+}
+
+#user:hover + .second-div1{
+	display:block;
+
+}
+
+.second-div1:hover{
+display:block;
+
+}
+
+.sidebar{
+width:100%;
+padding-top:20px;
+}
+
+.menu{
+color:white;
+padding:15px;
+border-bottom:1px solid #555;
+cursor:pointer;
+}
+
+.first{
+flex:1;
+height:1200px;
+background:white;
+padding:20px;
+}
+
+.first-div1{
+width:22%;
+height:120px;
+float:left;
+box-shadow:0px 0px 15px 0px;
+margin:20px 1.5%;
+text-align:center;
+padding-top:20px;
+font-size:18px;
+background-color:#6593d2	;
+
+}
+
+.first-div1 i{
+font-size:30px;
+margin-top:15px;
+color:black;
+}
+
+
+.first-div2{
+width:30%;
+height:250px;
+float:left;
+box-shadow:0px 0px 15px 0px;
+margin-left:50px;
+margin-top:20px;
+color:black;
+text-align:center;
+}
+
+.first-div3{
+width:22%;
+height:400px;
+float:left;
+box-shadow:0px 0px 15px 0px;
+margin-left:50px;
+margin-top:20px;
+color:black;
+text-align:center;
+}
+
+
+.first-div4{
+width:20%;
+height:120px;
+float:left;
+box-shadow:0px 0px 15px 0px;
+margin:20px 1.5%;
+text-align:center;
+margin-top:-110px;
+font-size:18px;
+background-color:#6593d2;
+}
+
+.first-div4 i{
+font-size:30px;
+margin-top:15px;
+color:black;
+}
+
+
+.first-div5{
+width:65%;
+height:400px;
+box-shadow:0px 0px 15px 0px;
+margin-top:630px;
+color:black;
+text-align:center;
+
+}
+
+
+.first-div6{
+width:45%;
+height:400px;
+box-shadow:0px 0px 15px 0px;
+color:black;
+text-align:center;
+
+}
+
+
+
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+<ul>
+<li><a href="#home"> <i class="fa-solid fa-circle-arrow-left"> </a></i>
+<li><a href="#home"> <i class="fa-solid fa-house"> </a></i>
+<li><a href="#home"> <i class="fa-solid fa-magnifying-glass"> </a></i> 
+<li><a href="#home"> <i class="fa-solid fa-circle-arrow-right"> </a></i> 
+<li><a href="#home"> <i class="fa-solid fa-bell" style="margin-left:850px;"> </a></i> 
+ <li><a href="#home"> <i class="fa-solid fa-trash-can"> </a></i>
+<li><a href="#home"> <i class="fa-solid fa-user" > </a></i>
+
+</ul>
+</header>
+
+<div class="container">
+<div class="second">
+<div class="sidebar">
+	<div id="user"class="menu">
+		User
+	</div>
+
+	<div class="second-div1">
+		<a href="adduser.html">add user</a>
+		<p>------------------------------</p>
+		<a href="list.html">user list</a>
+	</div>
+	<br>
+	<div class="menu">Report</div>
+	<div class="menu">Tasks</div>
+	<div class="menu">Logout</div>
+
+
+
+
+
+</div>
+</div>
+
+
+
+<div class="first">
+
+<div class="first-div1">$45,195 Revenue
+<div><i class="fa-solid fa-database"></i></div>
+</div>
+
+<div class="first-div1">80% Profit
+<div><i class="fa-solid fa-chart-area"></i></div>
+</div>
+
+<div class="first-div1">845+ Customers
+<div><i class="fa-solid fa-user"></i></div>
+</div>
+
+<div class="first-div1">10,905 Invoices
+<div><i class="fa-brands fa-discord"></i></div>
+</div>
+
+
+<div class="first-div2"><img src="div2.jpeg"  style="width:350px;height:auto;"></img>   </div>
+
+<div class="first-div2"><img src="div2s.jpeg"  style="width:230px;height:auto; margin-top:10px;"></img>  </div>
+
+
+
+<div class="first-div3"> <img src="div3.jpeg"  style="width:180px;height:auto; margin-top:15px;"></img>  </div>
+
+
+
+<div class="first-div4"><h2>$45,195</h2>
+<div><i class="fa-solid fa-database"></i></div>
+</div>
+
+<div class="first-div4"><h2>80% Profit</h2>
+<div><i class="fa-solid fa-chart-area"></i></div>
+</div>
+
+<div class="first-div4"><h2>10,905</h2>
+<div><i class="fa-brands fa-discord"></i></div>
+</div>
+
+
+
+
+<div class="first-div5"><img src="div5a.jpeg"  style="width:715px;height:auto; margin-top:18px;margin-left:12px;"></img> 
+
+<div class="first-div6" style="margin-left: 804px; margin-top: -360px;"><img src="div5x.jpeg"  style="width:322px;height:auto; 
+margin-left:-1px;"></img> 
+ </div>
+
+ </div>
+
+
+
+
+</div>
+
+
+
+</div>
+
+</body>
+</html>
