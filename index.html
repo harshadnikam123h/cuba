@@ -14,6 +14,7 @@ padding:0;
 box-sizing:border-box;
 }
 
+
 header{
 height:60px;
 width:100%;
@@ -54,6 +55,33 @@ display:flex;
 width:200px;
 min-height:100vh;
 background:#333;
+position:relative;
+}
+
+
+.second-div1{
+
+width:100%;
+height:30%;
+float:left;
+box-shadow:0px 0px 15px 0px;
+color:white;
+text-align:center;
+position:relative;
+display:none;
+padding:15px;
+
+
+}
+
+#user:hover + .second-div1{
+	display:block;
+
+}
+
+.second-div1:hover{
+display:block;
+
 }
 
 .sidebar{
@@ -182,10 +210,24 @@ text-align:center;
 <div class="container">
 <div class="second">
 <div class="sidebar">
-<div class="menu">User</div>
-<div class="menu">Report</div>
-<div class="menu">Tasks</div>
-<div class="menu">Logout</div>
+	<div id="user"class="menu">
+		User
+	</div>
+
+	<div class="second-div1">
+		<a href="adduser.html">add user</a>
+		<p>------------------------------</p>
+		<a href="list.html">user list</a>
+	</div>
+	<br>
+	<div class="menu">Report</div>
+	<div class="menu">Tasks</div>
+	<div class="menu">Logout</div>
+
+
+
+
+
 </div>
 </div>
 
@@ -231,6 +273,8 @@ text-align:center;
 <div class="first-div4"><h2>10,905</h2>
 <div><i class="fa-brands fa-discord"></i></div>
 </div>
+
+
 
 
 <div class="first-div5"><img src="div5a.jpeg"  style="width:715px;height:auto; margin-top:18px;margin-left:12px;"></img> 
